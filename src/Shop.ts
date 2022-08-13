@@ -783,7 +783,7 @@ export const buyShopUpgrades = async (input: ShopUpgradeNames) => {
             buyCost = buyData.cost;
     }
 
-    const noRefunds = shopItem.refundable ? '' : ' REMINDER: No refunds!';
+    const noRefunds = shopItem.refundable ? '' : '\n\n\u26A0\uFE0F !! No Refunds !! \u26A0\uFE0F';
 
     if (player.shopBuyMaxToggle === 'ANY') {
         const buyInput = await Prompt(`You can afford to purchase up to ${buyAmount} of ${friendlyShopName(input)} for ${buyCost} Quarks. How many would you like to buy?${noRefunds}`);
