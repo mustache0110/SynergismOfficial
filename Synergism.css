@@ -1879,6 +1879,22 @@ p#reincarnatehotkeys {
     margin: 0 0 0 10px;
 }
 
+.num {
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+.den {
+    font-size: 0.7em;
+}
+
+.den::before {
+    content: "\2044";
+    font-size: 1.5em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
 #goldenQuarkamount {
     font-size: 1.2em;
     color: gold;
@@ -3178,6 +3194,7 @@ header #obtainiumDisplay { color: pink; }
     display: block;
 }
 
+#warpAuto,
 #powderDayWarp {
     grid-column: 2 / 4;
 }

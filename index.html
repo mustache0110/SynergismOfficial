@@ -2706,6 +2706,7 @@
                         <div class="hepteractType" id="overfluxPowder" alt="overfluxPowder" label="overfluxPowder">
                             <img id="overfluxPowderImage" alt="overfluxPowderImage" label="overfluxPowderImage" class="heptTypeImage" src="Pictures/Overflux Powder.png">
                             <button id="powderDayWarp" alt="powderDayWarp" label="powderDayWarp">Warp</button>
+                            <button id="warpAuto" style="border: 2px solid red;">Auto OFF</button>
                             <div class="heptGridInventory" style="align-self: end;">
                                 <span class="heptGridInventoryLabel" style="color:orchid;">Powder:</span>
                                 <span class="heptGridInventoryValue" style="color:orchid;" id="heptGridPowderBalance" alt="heptGridPowderBalance" label="heptGridPowderBalance">0</span>
@@ -3115,6 +3116,7 @@ $STAGE$ for synergism stage" style="color: white"></p>
             <p id="statGCM19" alt="statGCM19" label="statGCM19" class="statPortion">-<span id="sGCM19" alt="sGCM19" label="sGCM19" class="statNumber">-</span></p>
             <p id="statGCM20" alt="statGCM20" label="statGCM20" class="statPortion">-<span id="sGCM20" alt="sGCM20" label="sGCM20" class="statNumber">-</span></p>
             <p id="statGCM21" alt="statGCM21" label="statGCM21" class="statPortion">-<span id="sGCM21" alt="sGCM21" label="sGCM21" class="statNumber">-</span></p>
+            <p id="statGCM22" alt="statGCM22" label="statGCM22" class="statPortion">-<span id="sGCM22" alt="sGCM22" label="sGCM22" class="statNumber">-</span></p>
             <p id="statGCMT" alt="statGCMT" label="statGCMT" class="statPortion statTotal" style="color: orange">TOTAL GLOBAL CUBE MULTIPLIER: <span
                 id="sGCMT" alt="sGCMT" label="sGCMT" class="statNumber statTotal">0</span></p>
         </div>
@@ -3239,6 +3241,7 @@ $STAGE$ for synergism stage" style="color: white"></p>
             <p id="statOcM21" alt="statOcM21" label="statOcM21" class="statPortion singularity"> <span id="sOcM21" alt="sOcM21" label="sOcM21" class="statNumber">0</span></p>
             <p id="statOcM22" alt="statOcM22" label="statOcM22" class="statPortion singularity"> <span id="sOcM22" alt="sOcM22" label="sOcM22" class="statNumber">0</span></p>
             <p id="statOcM23" alt="statOcM23" label="statOcM23" class="statPortion singularity"> <span id="sOcM23" alt="sOcM23" label="sOcM23" class="statNumber">0</span></p>
+            <p id="statOcM24" alt="statOcM24" label="statOcM24" class="statPortion singularity"> <span id="sOcM24" alt="sOcM24" label="sOcM24" class="statNumber">0</span></p>
             <p id="statOcMT" alt="statOcMT" label="statOcMT" class="statPortion statTotal" style="color: orange">TOTAL OCTERACT MULTIPLIER: <span
                     id="sOcMT" alt="sOcMT" label="sOcMT" class="statNumber statTotal">0</span></p>
         </div>
@@ -3353,6 +3356,11 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="offeringEX2Level"></p>
                             <button class="permshopbutton" id="offeringEX2Button" style="border: 2px solid yellow"></button>
                         </div>
+                        <div class="singularityShopUnlock4" id="offeringEX3Hide">
+                            <img id="offeringEX3" src="Pictures/Offering Upgrade 3.png" loading="lazy">
+                            <p id="offeringEX3Level"></p>
+                            <button class="permshopbutton" id="offeringEX3Button" style="border: 2px solid yellow"></button>
+                        </div>
                         <div id="obtainiumEXHide">
                             <img id="obtainiumEX" alt="obtainiumEX" label="obtainiumEX" src="Pictures/Obtainium Upgrade.png" loading="lazy">
                             <p id="obtainiumEXLevel" alt="obtainiumEXLevel" label="obtainiumEXLevel">Level: 0/5</p>
@@ -3368,6 +3376,11 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="obtainiumEX2Level"></p>
                             <button class="permshopbutton" id="obtainiumEX2Button" style="border: 2px solid red"></button>
                         </div>
+                        <div class="singularityShopUnlock4" id="obtainiumEX3Hide">
+                            <img id="obtainiumEX3" src="Pictures/Obtainium Upgrade 3.png" loading="lazy">
+                            <p id="obtainiumEX3Level"></p>
+                            <button class="permshopbutton" id="obtainiumEX3Button" style="border: 2px solid red"></button>
+                        </div>
                         <div id="instantChallengeHide">
                             <img id="instantChallenge" alt="instantChallenge" label="instantChallenge" src="Pictures/Instant Challenge.png" loading="lazy">
                             <p id="instantChallengeLevel" alt="instantChallengeLevel" label="instantChallengeLevel">Not Bought</p>
@@ -3378,12 +3391,12 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="instantChallenge2Level" alt="instantChallenge2Level" label="instantChallenge2Level"></p>
                             <button class="permshopbutton" id="instantChallenge2Button" alt="instantChallenge2Button" label="instantChallenge2Button" style="border: 2px solid darkviolet"></button>
                         </div>
-                        <div class="chal8Shop" id="antSpeedHide">
+                        <div class="chal8" id="antSpeedHide">
                             <img id="antSpeed" alt="antSpeed" label="antSpeed" src="Pictures/antspeed.png" loading="lazy">
                             <p id="antSpeedLevel" alt="antSpeedLevel" label="antSpeedLevel">Level: 0/3</p>
                             <button class="permshopbutton" id="antSpeedButton" alt="antSpeedButton" label="antSpeedButton" style="border: 2px solid maroon">Upgrade for 200 Quarks</button>
                         </div>
-                        <div class="chal8Shop" id="cashGrabHide">
+                        <div class="chal8" id="cashGrabHide">
                             <img id="cashGrab" alt="cashGrab" label="cashGrab" src="Pictures/cashgrab.png" loading="lazy">
                             <p id="cashGrabLevel" alt="cashGrabLevel" label="cashGrabLevel">Level: 0/5</p>
                             <button class="permshopbutton" id="cashGrabButton" alt="cashGrabButton" label="cashGrabButton" style="border: 2px solid limegreen">Upgrade for 100 Quarks</button>
@@ -3393,27 +3406,27 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="cashGrab2Level"></p>
                             <button class="permshopbutton" id="cashGrab2Button" style="border: 2px solid cyan"></button>
                         </div>
-                        <div class="chal9Shop" id="shopTalismanHide">
+                        <div class="chal9" id="shopTalismanHide">
                             <img id="shopTalisman" alt="shopTalisman" label="shopTalisman" src="Pictures/shoptalisman.png" loading="lazy">
                             <p id="shopTalismanLevel" alt="shopTalismanLevel" label="shopTalismanLevel">Not Bought</p>
                             <button class="permshopbutton" id="shopTalismanButton" alt="shopTalismanButton" label="shopTalismanButton" style="border: 2px solid chartreuse">Buy for 1,500 Quarks</button>
                         </div>
-                        <div class="ascendunlockShop" id="seasonPassHide">
+                        <div class="ascendunlock" id="seasonPassHide">
                             <img id="seasonPass" alt="seasonPass" label="seasonPass" src="Pictures/VIP Pass Upgrade.png" loading="lazy">
                             <p id="seasonPassLevel" alt="seasonPassLevel" label="seasonPassLevel">Level: 0/5</p>
                             <button class="permshopbutton" id="seasonPassButton" alt="seasonPassButton" label="seasonPassButton" style="border: 2px solid orange"></button>
                         </div>
-                        <div class="chal14Shop" id="seasonPass2Hide">
+                        <div class="chal14" id="seasonPass2Hide">
                             <img id="seasonPass2" alt="seasonPass2" label="seasonPass2" src="Pictures/VIP Pass Upgrade 2.png" loading="lazy">
                             <p id="seasonPass2Level" alt="seasonPass2Level" label="seasonPass2Level">Level: 0/100</p>
                             <button class="permshopbutton" id="seasonPass2Button" alt="seasonPass2Button" label="seasonPass2Button" style="border: 2px solid orange"></button>
                         </div>
-                        <div class="chal14Shop" id="seasonPass3Hide">
+                        <div class="chal14" id="seasonPass3Hide">
                             <img id="seasonPass3" alt="seasonPass3" label="seasonPass3" src="Pictures/VIP Pass Upgrade 3.png" loading="lazy">
                             <p id="seasonPass3Level" alt="seasonPass3Level" label="seasonPass3Level">Level: 0/100</p>
                             <button class="permshopbutton" id="seasonPass3Button" alt="seasonPass3Button" label="seasonPass3Button" style="border: 2px solid orange"></button>
                         </div>
-                        <div class="hepteractsShop" id="seasonPassYHide">
+                        <div class="hepteracts" id="seasonPassYHide">
                             <img id="seasonPassY" alt="seasonPassY" label="seasonPassY" src="Pictures/VIP Pass Upgrade Y.png" loading="lazy">
                             <p id="seasonPassYLevel" alt="seasonPassYLevel" label="seasonPassYLevel"></p>
                             <button class="permshopbutton" id="seasonPassYButton" alt="seasonPassYButton" label="seasonPassYButton" style="border: 2px solid red"></button>
@@ -3428,12 +3441,17 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="seasonPassLostLevel"></p>
                             <button class="permshopbutton" id="seasonPassLostButton" style="border: 2px solid blue"></button>
                         </div>
+                        <div class="singularityShopUnlock4" id="seasonPassInfinityHide">
+                            <img id="seasonPassInfinity" src="Pictures/VIP Pass Upgrade Infinity.png" loading="lazy">
+                            <p id="seasonPassInfinityLevel"></p>
+                            <button class="permshopbutton" id="seasonPassInfinityButton" style="border: 2px solid blue"></button>
+                        </div>
                         <div class="ascendunlockShop" id="challengeExtensionHide">
                             <img id="challengeExtension" alt="challengeExtension" label="challengeExtension" src="Pictures/Challenge Upgrade.png" loading="lazy">
                             <p id="challengeExtensionLevel" alt="challengeExtensionLevel" label="challengeExtensionLevel">Level: 0/5</p>
                             <button class="permshopbutton" id="challengeExtensionButton" alt="challengeExtensionButton" label="challengeExtensionButton" style="border: 2px solid gray"></button>
                         </div>
-                        <div class="ascendunlockShop" id="challengeTomeHide">
+                        <div class="ascendunlock" id="challengeTomeHide">
                             <img id="challengeTome" alt="challengeTome" label="challengeTome" src="Pictures/Challenge 10 Tome Upgrade.png" loading="lazy">
                             <p id="challengeTomeLevel" alt="challengeTomeLevel" label="challengeTomeLevel">Level: 0/5</p>
                             <button class="permshopbutton" id="challengeTomeButton" alt="challengeTomeButton" label="challengeTomeButton" style="border: 2px solid gold"></button>
@@ -3443,17 +3461,17 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="challengeTome2Level" alt="challengeTome2Level" label="challengeTome2Level"></p>
                             <button class="permshopbutton" id="challengeTome2Button" alt="challengeTome2Button" label="challengeTome2Button" style="border: 2px solid red"></button>
                         </div>
-                        <div class="ascendunlockShop" id="cubeToQuarkHide">
+                        <div class="ascendunlock" id="cubeToQuarkHide">
                             <img id="cubeToQuark" alt="cubeToQuark" label="cubeToQuark" src="Pictures/Cube Quark Upgrade.png" loading="lazy">
                             <p id="cubeToQuarkLevel" alt="cubeToQuarkLevel" label="cubeToQuarkLevel">Not Bought</p>
                             <button class="permshopbutton" id="cubeToQuarkButton" alt="cubeToQuarkButton" label="cubeToQuarkButton" style="border: 2px solid yellow"></button>
                         </div>
-                        <div class="chal11Shop" id="tesseractToQuarkHide">
+                        <div class="chal11" id="tesseractToQuarkHide">
                             <img id="tesseractToQuark" alt="tesseractToQuark" label="tesseractToQuark" src="Pictures/Tesseract Quark Upgrade.png" loading="lazy">
                             <p id="tesseractToQuarkLevel" alt="tesseractToQuarkLevel" label="tesseractToQuarkLevel">Not Bought</p>
                             <button class="permshopbutton" id="tesseractToQuarkButton" alt="tesseractToQuarkButton" label="tesseractToQuarkButton" style="border: 2px solid darkorchid"></button>
                         </div>
-                        <div class="chal13Shop" id="hypercubeToQuarkHide">
+                        <div class="chal13" id="hypercubeToQuarkHide">
                             <img id="hypercubeToQuark" alt="hypercubeToQuark" label="hypercubeToQuark" src="Pictures/Hypercube Quark Upgrade.png" loading="lazy">
                             <p id="hypercubeToQuarkLevel" alt="hypercubeToQuarkLevel" label="hypercubeToQuarkLevel">Not Bought</p>
                             <button class="permshopbutton" id="hypercubeToQuarkButton" alt="hypercubeToQuarkButton" label="hypercubeToQuarkButton" style="border: 2px solid red"></button>
@@ -3463,12 +3481,12 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="cubeToQuarkAllLevel"></p>
                             <button class="permshopbutton" id="cubeToQuarkAllButton" style="border: 2px solid purple"></button>
                         </div>
-                        <div class="chal12Shop" id="chronometerHide">
+                        <div class="chal12" id="chronometerHide">
                             <img id="chronometer" alt="chronometer" label="chronometer" src="Pictures/Chronometer.png" loading="lazy">
                             <p id="chronometerLevel" alt="chronometerLevel" label="chronometerLevel">Level: 0/100</p>
                             <button class="permshopbutton" id="chronometerButton" alt="chronometerButton" label="chronometerButton" style="border: 2px solid red"></button>
                         </div>
-                        <div class="hepteractsShop" id="chronometer2Hide">
+                        <div class="hepteracts" id="chronometer2Hide">
                             <img id="chronometer2" alt="chronometer2" label="chronometer2" src="Pictures/Chronometer2.png" loading="lazy">
                             <p id="chronometer2Level" alt="chronometer2Level" label="chronometer2Level"></p>
                             <button class="permshopbutton" id="chronometer2Button" alt="chronometer2Button" label="chronometer2Button" style="border: 2px solid red"></button>
@@ -3483,6 +3501,11 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="chronometerZLevel"></p>
                             <button class="permshopbutton" id="chronometerZButton" style="border: 2px solid lime"></button>
                         </div>
+                        <div class="singularityShopUnlock3" id="chronometerInfinityHide">
+                            <img id="chronometerInfinity" src="Pictures/Chronometer Infinity.png" loading="lazy">
+                            <p id="chronometerInfinityLevel"></p>
+                            <button class="permshopbutton" id="chronometerInfinityButton" style="border: 2px solid lime"></button>
+                        </div>
                         <div class="chal14Shop" id="infiniteAscentHide">
                             <img id="infiniteAscent" alt="infiniteAscent" label="infiniteAscent" src="Pictures/Shop Rune.png" loading="lazy">
                             <p id="infiniteAscentLevel" alt="infiniteAscentLevel" label="infiniteAscentLevel">Not Bought</p>
@@ -3493,12 +3516,12 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="calculatorLevel" alt="calculatorLevel" label="calculatorLevel">Not Bought</p>
                             <button class="permshopbutton" id="calculatorButton" alt="calculatorButton" label="calculatorButton" style="border: 2px solid purple"></button>
                         </div>
-                        <div class="chal11Shop" id="calculator2Hide">
+                        <div class="chal11" id="calculator2Hide">
                             <img id="calculator2" alt="calculator2" label="calculator2" src="Pictures/Calculator2.png" loading="lazy">
                             <p id="calculator2Level" alt="calculator2Level" label="calculator2Level"></p>
                             <button class="permshopbutton" id="calculator2Button" alt="calculator2Button" label="calculator2Button" style="border: 2px solid purple"></button>
                         </div>
-                        <div class="chal13Shop" id="calculator3Hide">
+                        <div class="chal13" id="calculator3Hide">
                             <img id="calculator3" alt="calculator3" label="calculator3" src="Pictures/Calculator3.png" loading="lazy">
                             <p id="calculator3Level" alt="calculator3Level" label="calculator3Level"></p>
                             <button class="permshopbutton" id="calculator3Button" alt="calculator3Button" label="calculator3Button" style="border: 2px solid purple;"></button>
@@ -3518,17 +3541,17 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <p id="calculator6Level" alt="calculator6Level" label="calculator6Level"></p>
                             <button class="permshopbutton" id="calculator6Button" alt="calculator6Button" label="calculator6Button" style="border: 2px solid black;"></button>
                         </div>
-                        <div class="chal14Shop" id="constantEXHide">
+                        <div class="chal14" id="constantEXHide">
                             <img id="constantEX" alt="constantEX" label="constantEX" src="Pictures/ConstantExtension.png" loading="lazy">
                             <p id="constantEXLevel" alt="constantEXLevel" label="constantEXLevel"></p>
                             <button class="permshopbutton" id="constantEXButton" alt="constantEXButton" label="constantEXButton" style="border: 2px solid gray;"></button>
                         </div>
-                        <div class="hepteractsShop" id="powderEXHide">
+                        <div class="hepteracts" id="powderEXHide">
                             <img id="powderEX" alt="powderEX" label="powderEX" src="Pictures/Powder Gain Upgrade.png" loading="lazy">
                             <p id="powderEXLevel" alt="powderEXLevel" label="powderEXLevel"></p>
                             <button class="permshopbutton" id="powderEXButton" alt="powderEXButton" label="powderEXButton" style="border: 2px solid red;"></button>
                         </div>
-                        <div class="hepteractsShop" id="improveQuarkHeptHide">
+                        <div class="hepteracts" id="improveQuarkHeptHide">
                             <img id="improveQuarkHept" alt="improveQuarkHept" label="improveQuarkHept" src="Pictures/Improved Quark Hepteract Shop 0.png">
                             <p id="improveQuarkHeptLevel" alt="improveQuarkHeptLevel" label="improveQuarkHeptLevel"></p>
                             <button class="permshopbutton" id="improveQuarkHeptButton" alt="improveQuarkHeptButton" label="improveQuarkHeptButton" style="border: 2px solid cyan;"></button>
@@ -3547,6 +3570,11 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <img id="improveQuarkHept4" alt="improveQuarkHept4" label="improveQuarkHept4" src="Pictures/Improved Quark Hepteract Shop 3.png">
                             <p id="improveQuarkHept4Level" alt="improveQuarkHept4Level" label="improveQuarkHept4Level"></p>
                             <button class="permshopbutton" id="improveQuarkHept4Button" alt="improveQuarkHept4Button" label="improveQuarkHept4Button" style="border: 2px solid grey;"></button>
+                        </div>
+                        <div class="singularityShopUnlock4" id="improveQuarkHept5Hide">
+                            <img id="improveQuarkHept5" alt="improveQuarkHept5" label="improveQuarkHept5" src="Pictures/Improved Quark Hepteract Shop Infinity.png">
+                            <p id="improveQuarkHept5Level"></p>
+                            <button class="permshopbutton" id="improveQuarkHept5Button" style="border: 2px solid grey;"></button>
                         </div>
                         <div class="chal14Shop" id="shopImprovedDailyHide">
                             <img id="shopImprovedDaily" alt="shopImprovedDaily" src="Pictures/Shop Improved Daily0.png">
@@ -3582,6 +3610,11 @@ $STAGE$ for synergism stage" style="color: white"></p>
                             <img id="extraWarp" src="Pictures/Additional Warp.png" loading="lazy">
                             <p id="extraWarpLevel"></p>
                             <button class="permshopbutton" id="extraWarpButton" style="border: 2px solid orange"></button>
+                        </div>
+                        <div class="singularityShopUnlock3" id="autoWarpHide">
+                            <img id="autoWarp" alt="" src="Pictures/Auto%20Warp.png" loading="lazy">
+                            <p id="autoWarpLevel"></p>
+                            <button class="permshopbutton" id="autoWarpButton" style="border: 2px solid darkred"></button>
                         </div>
                         <div class="singularity">
                             <img id="buySingularityQuarks" alt="buySingularityQuarks" label="buySingularityQuarks" src="Pictures/Shop Golden Quarks.png" loading="lazy">
@@ -3658,6 +3691,9 @@ $STAGE$ for synergism stage" style="color: white"></p>
                     </div>
                     <div class="singularityUpgrade">
                         <img id="wowPass3" alt="wowPass3" label="wowPass2" src="Pictures/Singularity Wow Pass 3.png">
+                    </div>
+                    <div class="singularityUpgrade">
+                        <img id="wowPass4" alt="wowPass4" label="wowPass4" src="Pictures/Singularity Wow Pass 4.png">
                     </div>
                     <div class="singularityUpgrade">
                         <img id="cookies" alt="cookies" label="cookies" src="Pictures/SingularityCookies.png">
@@ -3786,6 +3822,9 @@ $STAGE$ for synergism stage" style="color: white"></p>
                     </div>
                     <div class="singularityUpgrade">
                         <img id="ultimatePen" src="Pictures/Ultimate Pen.png" style="cursor: pointer">
+                    </div>
+                    <div class="singularityUpgrade">
+                        <img id="oneMind" src="Pictures/Singularity One Mind.png" style="cursor: pointer">
                     </div>
                 </div>
             </div>
