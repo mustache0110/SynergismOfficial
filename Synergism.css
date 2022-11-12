@@ -1880,18 +1880,18 @@ p#reincarnatehotkeys {
 }
 
 .num {
-    font-size: 0.7em;
-    vertical-align: super;
+    font-size: 0.8em;
+    vertical-align: text-top;
 }
 
 .den {
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .den::before {
     content: "\2044";
-    font-size: 1.5em;
-    margin-left: 0.1em;
+    font-size: 1.25em;
+    margin-left: 0.15em;
     margin-right: 0.1em;
 }
 
